@@ -98,7 +98,7 @@ function Dashboard() {
               <h3 className="metric-title">Tokens Activos</h3>
             </div>
             <div className="metric-value">{metrics.tokens?.active || 0}</div>
-            <p className="metric-description">Tokens de acceso válidos</p>
+            <p className="metric-description">Tokens de acceso válido</p>
             <div className="metric-trend trend-neutral">
               → {metrics.tokens?.total || 0} emitidos
             </div>
