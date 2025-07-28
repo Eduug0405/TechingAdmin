@@ -1,0 +1,19 @@
+{
+  "apps": [{
+    "name": "techinng-admin",
+    "script": "server.js",
+    "cwd": "/var/www/techinng-admin",
+    "instances": 1,
+    "exec_mode": "cluster",
+    "env": {
+      "NODE_ENV": "production",
+      "PORT": 3000
+    },
+    "error_file": "/var/log/pm2/techinng-admin-error.log",
+    "out_file": "/var/log/pm2/techinng-admin-out.log",
+    "log_file": "/var/log/pm2/techinng-admin.log",
+    "time": true,
+    "max_memory_restart": "500M",
+    "restart_delay": 4000
+  }]
+}
